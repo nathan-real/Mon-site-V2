@@ -1,3 +1,54 @@
 p {
     color: aliceblue;
 }
+
+.titre1-header {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.titre2-header {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Navigation Bar */
+.my-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(25, 25, 38);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.elt-navbar {
+    float: left;
+    font-size: 22px;
+}
+
+.elt-navbar .link-navbar {
+    display: block;
+    color: aliceblue;
+    text-align: left;
+    padding: 14px 22px;
+    text-decoration: none;
+}
+
+.elt-navbar .link-navbar:hover:not(.active) {
+    background-color: #555;
+}
+
+.active {
+    background-color: rgb(78, 188, 247)
+}
