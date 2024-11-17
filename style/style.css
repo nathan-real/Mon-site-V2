@@ -29,7 +29,7 @@ p {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
 }
 
 .elt-navbar {
@@ -51,4 +51,43 @@ p {
 
 .active {
     background-color: rgb(78, 188, 247)
+}
+
+/* ***************** Page ****************** */
+
+.my-hr {
+    background-color: aliceblue;
+    width: 80%;
+    height: 3px;
+    border: 0;
+    opacity: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+/* ***************** Container ****************** */
+
+.img-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 600px;
+
+}
+
+/* ***************** Image ****************** */
+.my-img {
+    width: 50%;
+}
+
+/* ***************** Animation ****************** */
+
+.img-anim-scale {
+    transition: 0.5s;
+}
+
+.img-anim-scale:hover {
+    scale: 1.07;
 }
