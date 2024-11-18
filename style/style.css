@@ -52,7 +52,7 @@ a {
     margin: 0;
 }
 
-/* Navigation Bar */
+/**************************** Navigation Bar ********************************* */
 .my-navbar {
     list-style-type: none;
     margin: 0;
@@ -80,6 +80,7 @@ a {
     text-align: left;
     padding: 14px 22px;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .elt-navbar .link-navbar:hover:not(.active) {
@@ -89,6 +90,54 @@ a {
 .active {
     background-color: rgb(78, 188, 247);
 }
+
+/* ************************ Vertical NavBar ***************************** */
+
+/* Navbar verticale*/
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.vert-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    width: 410px;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: block;
+    float: center;
+}
+
+.elt-vert-navbar a {
+    display: block;
+    color: aliceblue;
+    font-size: 17px;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.elt-vert-navbar a:hover {
+    background-color: rgba(78, 188, 247, 0.5);
+    color: white;
+}
+
+.titre-vert-navbar {
+    display: block;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(78, 188, 247);
+}
+
 
 /* ***************** Page ****************** */
 
@@ -224,7 +273,6 @@ label {
     font-size: 20px;
 }
 
-
 /* *********************** Reponse.html ********************** */
 
 .reponse-questionnaire {
@@ -236,6 +284,34 @@ label {
 #reponses {
     margin-top: 50px;
 }
+
+.custom-button {
+    text-decoration: none;
+    width: 250px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(58, 173, 255);
+    color: aliceblue;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.custom-button:hover {
+    background-color: rgba(58, 173, 255, 0.5);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.custom-button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
 
 /* ********************** Footer *************************** */
 
