@@ -2,21 +2,54 @@ p {
     color: aliceblue;
 }
 
+body {
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Helvetica;
+}
+
+a {
+    color: aliceblue;
+}
+
+/* ********************* Titres *************************** */
+
 .titre1-header {
     font-size: 50px;
-    color: black;
+    color: aliceblue;
     text-align: center;
     padding-top: 50px;
     margin: 0;
+    text-shadow: 0 0 10px #FFFFFF;
 }
 
 .titre2-header {
     font-size: 30px;
-    color: black;
+    color: aliceblue;
     text-align: center;
     margin: 0;
     padding-top: 50px;
     padding-bottom: 50px;
+    text-shadow: 0 0 10px #FFFFFF;
+}
+
+.titre-partie {
+    text-align: left;
+    font-size: 40px;
+    color: aliceblue;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    margin: 0;
+}
+
+.soustitre-center {
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+    padding-bottom: 50px;
+    margin: 0;
 }
 
 /* Navigation Bar */
@@ -25,11 +58,15 @@ p {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(25, 25, 38);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 100;
+
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
 }
 
 .elt-navbar {
@@ -46,11 +83,11 @@ p {
 }
 
 .elt-navbar .link-navbar:hover:not(.active) {
-    background-color: #555;
+    background: rgba(78, 188, 247, 0.5);
 }
 
 .active {
-    background-color: rgb(78, 188, 247)
+    background-color: rgb(78, 188, 247);
 }
 
 /* ***************** Page ****************** */
@@ -68,18 +105,56 @@ p {
 
 /* ***************** Container ****************** */
 
-.img-container {
+.my-container {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-content: center;
-    height: 600px;
-
+    align-items: center;
+    height: 700px;
 }
+
+.txt-container {
+    background: linear-gradient(30deg, rgb(227, 184, 245, 0.6), rgb(145, 174, 255, 0.6));
+    margin: 0;
+    border-radius: 40px;
+    width: 90%;
+}
+
+
+/* ********************* Texte ************************** */
+
+#link-figma {
+    color: aliceblue;
+    font-size: 28px;
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#link-figma:hover {
+    color: rgba(78, 188, 247);
+}
+
+.description {
+    color: aliceblue;
+    font-size: 23px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
 
 /* ***************** Image ****************** */
 .my-img {
-    width: 50%;
+    width: 90%;
+    border-radius: 40px;
 }
 
 /* ***************** Animation ****************** */
@@ -90,4 +165,88 @@ p {
 
 .img-anim-scale:hover {
     scale: 1.07;
+}
+
+
+/* ********************* Tableau ************************** */
+
+.tableau {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border: 3px solid #ddd;
+    color: #10172a;
+}
+
+th {
+    background-color: rgb(58, 173, 255);
+    color: al;
+    font-size: 20px;
+}
+
+/* ************************* Formulaire **************************** */
+
+form {
+    width: 420px;
+}
+
+fieldset {
+    border: 3px solid;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+legend {
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+label {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+
+/* *********************** Reponse.html ********************** */
+
+.reponse-questionnaire {
+    color: aliceblue;
+    text-align: center;
+    font-size: 24px;
+}
+
+#reponses {
+    margin-top: 50px;
+}
+
+/* ********************** Footer *************************** */
+
+footer {
+    padding: 0;
+    margin: 0;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    text-align: center;
+    align-content: center;
+    padding: 20px 0;
+    font-size: 15px;
 }
