@@ -202,8 +202,12 @@ a {
 
 /* ***************** Image ****************** */
 .my-img {
-    width: 90%;
+    height: 90%;
+    width: auto;
+    max-width: 90%;
     border-radius: 40px;
+    display: block;
+    object-fit: cover;
 }
 
 /* ***************** Animation ****************** */
