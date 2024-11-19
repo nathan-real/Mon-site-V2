@@ -248,7 +248,7 @@ td {
 }
 
 th {
-    background-color: rgb(58, 173, 255);
+    background-color: rgb(78, 188, 247);
     color: al;
     font-size: 20px;
 }
@@ -329,4 +329,8 @@ footer {
     align-content: center;
     padding: 20px 0;
     font-size: 15px;
+}
+
+.link_cv {
+    margin-top: 40px;
 }
