@@ -37,19 +37,17 @@ a {
 
 .titre-partie {
     text-align: left;
-    font-size: 40px;
+    font-size: 45px;
     color: aliceblue;
     padding-bottom: 50px;
     padding-left: 50px;
     margin: 0;
+    font-weight: 700;
 }
 
 .soustitre-center {
     text-align: center;
-    font-size: 40px;
-    color: aliceblue;
-    padding-bottom: 50px;
-    margin: 0;
+    padding-left: 0;
 }
 
 /**************************** Navigation Bar ********************************* */
@@ -110,6 +108,8 @@ a {
     background-color: rgb(0, 0, 0, 0.5);
     display: block;
     float: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .elt-vert-navbar a {
@@ -136,6 +136,8 @@ a {
     text-decoration: none;
     text-align: center;
     background-color: rgb(78, 188, 247);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 
@@ -159,16 +161,15 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    padding: 40px;
 }
 
 .txt-container {
-    background: linear-gradient(30deg, rgb(227, 184, 245, 0.6), rgb(145, 174, 255, 0.6));
+    background: linear-gradient(30deg, rgba(217, 129, 255, 0.05), rgb(145, 174, 255, 0.5));
     margin: 0;
     border-radius: 40px;
     width: 90%;
 }
-
 
 /* ********************* Texte ************************** */
 
@@ -186,7 +187,7 @@ a {
 }
 
 #link-figma:hover {
-    color: rgba(78, 188, 247);
+    color: rgb(78, 188, 247);
 }
 
 .description {
@@ -196,13 +197,12 @@ a {
     padding-right: 35px;
     padding-top: 20px;
     padding-bottom: 10px;
-    text-align: justify;
+    line-height: 1.8;
+    text-align: left;
 }
-
 
 /* ***************** Image ****************** */
 .my-img {
-    height: 90%;
     width: auto;
     max-width: 90%;
     border-radius: 40px;
@@ -219,7 +219,6 @@ a {
 .img-anim-scale:hover {
     scale: 1.07;
 }
-
 
 /* ********************* Tableau ************************** */
 
