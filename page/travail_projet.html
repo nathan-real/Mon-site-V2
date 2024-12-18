@@ -2,17 +2,20 @@
 <html lang="fr">
 
 <head>
+    <!-- Balises meta -->
     <meta charset="UTF-8">
     <meta name="author" content="Nathan Adelmard">
     <meta name="keywords" content="Watch Face">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Instruction de style dans le head de la page -->
     <style>
         body {
             font-family: Arial;
             margin: 0;
         }
     </style>
+    <!-- Favicon de la page -->
     <link rel="icon" type="image/x-icon" href="../image/Kubby_Logo.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -21,9 +24,15 @@
     <title>Watch Face</title>
 </head>
 
+<!-- Une instruction locale de CSS -->
+<!-- Couleur gérée avec un "#" -->
+
 <body style="background-color: #10172a;">
-    <div style="background: linear-gradient(330deg,rgb(227, 184, 245), rgb(145, 174, 255))">
-        <h1 class="titre1-header">
+    <!-- Couleur gérée en rgb et rgba pour la transparance -->
+    <!-- Entête de la page -->
+    <div style="background: linear-gradient(30deg, rgba(217, 129, 255, 0.05), rgb(145, 174, 255, 0.5))">
+        <!-- un lien de type class pour le CSS -->
+        <h1 class="titre1-header"> <!-- Titre dans l’entête en relation avec son thème -->
             Étapes à suivre pour créer un cadran Wear OS
         </h1>
         <h2 class="titre2-header">
@@ -43,6 +52,7 @@
     <div class="nav-container">
         <ul class="vert-navbar">
             <li class="titre-vert-navbar">Au sommaire :</li>
+            <!-- Lien de type ancre -->
             <li class="elt-vert-navbar"><a href="#soustitre1">Qu'est ce qu'un cadran Wear OS (Watch Face) ?</a></li>
             <li class="elt-vert-navbar"><a href="#soustitre2">Où designer sa Watch Face ?</a></li>
             <li class="elt-vert-navbar"><a href="#soustitre3">Watch Face Studio</a></li>
@@ -59,10 +69,11 @@
         Qu'est ce qu'un cadran Wear OS (Watch Face) ?
     </h1>
 
-    <div class="container-fluid"> <!-- Utilisation de Bootstrap-->
+    <div class="container-fluid"> <!-- Utilisation de Bootstrap pour le responsive design-->
 
         <div class="row">
             <div class="col-lg-6 my-container">
+                <!-- Image 1 -->
                 <img class="my-img img-anim-scale" src="../image/GW7-V2.png" alt="Image d'une galaxy watch 7">
             </div>
             <div class="col-lg-6 my-container">
@@ -77,6 +88,7 @@
         </div>
     </div>
 
+    <!-- un lien de type ID pour le CSS -->
     <hr class="my-hr" id="soustitre2">
 
     <h1 class="titre-partie">
@@ -92,11 +104,13 @@
                         principalement basé sur le web, avec des fonctionnalités hors ligne supplémentaires activées par
                         des
                         applications de bureau pour macOS et Windows.</p>
+                    <!-- Lien externe pour télécharger un Figma -->
                     <a target="_blank" id="link-figma" href="https://www.figma.com/fr-fr/downloads/">Télécharger Figma
                         gratuitement</a>
                 </div>
             </div>
             <div class="col-lg-6 my-container">
+                <!-- Image 2 avec un lien externe -->
                 <img class="my-img img-anim-scale"
                     src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/3000/figma-logo-512.png"
                     alt="Logo Figma">
@@ -107,6 +121,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 my-container">
+                <!-- Image 3 -->
                 <img class="my-img img-anim-scale" src="../image/Figma-screen.png" alt="Screen du logiciel Figma">
             </div>
             <div class="col-lg-6 my-container">
@@ -192,6 +207,7 @@
     <h1 class="titre-partie soustitre-center">
         Tableau informatif
     </h1>
+    <!-- Un tableau d’au moins deux lignes et deux colonnes, et au moins l’utilisation d’un rowspan ou un colspan -->
     <div class="tableau">
         <table>
             <tr>
@@ -226,18 +242,18 @@
 
     <h1 class="titre-partie soustitre-center">Questionnaire</h1>
     <div class="tableau">
-
+        <!-- Questionnaire avec requette "GET" -->
         <form action="reponse.html" method="GET">
             <fieldset>
                 <legend>Donnez votre avis !</legend>
                 <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" required><br><br>
+                <input class="input-border" type="text" id="nom" name="nom" required><br><br>
 
                 <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required><br><br>
+                <input class="input-border" type="email" id="email" name="email" required><br><br>
 
                 <label for="avis">Votre avis :</label><br>
-                <textarea id="avis" name="avis" rows="4" cols="37" required></textarea><br><br>
+                <textarea class="input-border" id="avis" name="avis" rows="4" cols="37" required></textarea><br><br>
 
                 <button type="submit">Envoyer</button>
             </fieldset>
@@ -246,8 +262,10 @@
 
     <hr class="my-hr">
 
+    <!-- Pied de page -->
     <footer>
         <p>&copy; 2024 Nathan ADELMARD. Tous droits réservés.</p>
+        <!-- Lien externe vers mon CV -->
         <a class="custom-button link_cv" target="_blank" href="../assets/CV_Nathan_adelmard.pdf">Mon cv</a>
         <p>Créé pour ❤️ Monsieur Placin ❤️ par Nathan ADELMARD.</p>
     </footer>
